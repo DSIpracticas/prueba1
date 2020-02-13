@@ -61,7 +61,7 @@
             <TextBlock Foreground="White" FontSize="25" Text="Feels like: 63°"/>
         </StackPanel>
         <Image Margin="20" Source="Assets/partially-cloudy.png"/>
-        <TextBox x:Name="cityInput" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="220" Margin="5,5,5,5" TextChanged="cityInput_TextChanged"/>
+        <TextBox x:Name="cityInput" KeyDown="OnKeyDownHandler" HorizontalAlignment="Left" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Width="220" Margin="5,5,5,5" TextChanged="cityInput_TextChanged"/>
         <Button x:Name="botonMapa" HorizontalAlignment="Right" Content="Mapa" Margin="0,0,5,0" Grid.Column="1" Grid.Row="2" Click="Button_Click"/>
     </Grid>
 </Page>

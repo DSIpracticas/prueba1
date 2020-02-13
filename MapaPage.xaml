@@ -19,12 +19,12 @@
         </Grid.RowDefinitions>
         <Border Grid.Row="1" Background="LightGray"/>
         <Button x:Name="botonAtras" Click="Back_Click" Style="{StaticResource NavigationBackButtonNormalStyle}" HorizontalAlignment="Left"/>
-        
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Margin="5,0,5,0" VerticalAlignment="Top">
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center" Width="100" Margin="5,0,5,0" VerticalAlignment="Top">
             <TextBlock x:Name="cityText" HorizontalAlignment="Center" Margin="0,0,0,10" Foreground="Black" FontSize="25" Text="Text"/>
-            <Button x:Name="zoomButtom" HorizontalAlignment="Center"  Margin="0,0,0,10" Content="ZOOM"/>
-            <Button x:Name="saveButtom" HorizontalAlignment="Center"  Margin="0,0,0,10" Content="SAVE"/>
-            <Button x:Name="optionsButtom" HorizontalAlignment="Center"  Margin="0,0,0,10" Content="OPTIONS"/>
+            <Button x:Name="zoomButtom" HorizontalAlignment="Center" Width="100" Margin="0,0,0,10" Content="ZOOM"/>
+            <Button x:Name="saveButtom" HorizontalAlignment="Center" Width="100"  Margin="0,0,0,10" Content="SAVE"/>
+            <Button x:Name="optionsButtom" HorizontalAlignment="Center" Width="100" Margin="0,0,0,10" Content="OPTIONS"/>
         </StackPanel>
         
         <Image Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Source="Assets/Madrid.bmp"/>

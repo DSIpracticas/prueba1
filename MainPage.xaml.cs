@@ -25,6 +25,7 @@ namespace practica2
         public MainPage()
         {
             this.InitializeComponent();
+            botonMapa.Visibility = Visibility.Collapsed;
             this.NavigationCacheMode = Windows.UI.Xaml.Navigation.NavigationCacheMode.Enabled;
         }
 
@@ -32,6 +33,15 @@ namespace practica2
         {
             cityName.Text = cityInput.Text;
         }
+
+        private void OnKeyDownHandler(object sender, KeyRoutedEventArgs e)
+        {
+            if (e.Key == Windows.System.VirtualKey.Enter)
+            {
+                botonMapa.Visibility = Visibility.Visible;
+            }
+        }
+
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
